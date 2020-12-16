@@ -38,7 +38,8 @@ epochs = 100
 
 model = tf.keras.models.Sequential([
     tf.keras.layers.Flatten(),
-    tf.keras.layers.Dense(32, activation=tf.nn.relu, input_shape=(11, )),
+    tf.keras.layers.Dense(32, activation=tf.nn.relu,
+                          input_shape=(X_train.shape[1], )),
     tf.keras.layers.Dense(32, activation=tf.nn.relu),
     tf.keras.layers.Dense(32, activation=tf.nn.relu),
     tf.keras.layers.Dense(32, activation=tf.nn.relu),
