@@ -113,9 +113,10 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 # %% [markdown]
 # ## plot
+# %%
 plt.scatter(y_test, y_pred)
 plt.xlabel('price')
 plt.ylabel('predicted price')
 plt.title('y_test vs y_pred')
 plt.axis('equal')
-# %%
+# %% [markdown]
