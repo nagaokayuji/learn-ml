@@ -9,7 +9,7 @@ import numpy as np
 x = np.linspace(-100, 100, 300)
 # %%
 sigma = 20
-mu = 0
+mu = 5
 # %%
 # %%
 y = 1. / ((2*np.pi)**0.5 * sigma) * np.exp(- ((x - mu)**2) / (2 * sigma**2))
